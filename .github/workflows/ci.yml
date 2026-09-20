@@ -16,7 +16,9 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.14"
 
-      - name: Run script
-        run: python hello_world.py
+      - name: Print Python version and run script
+        run: |
+          python --version
+          python hello_world.py
