@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: "3.14"
 
+      - name: Lint Python code
+        run: python -m py_compile hello_world.py
+
       - name: Print Python version and run script
         run: |
           python --version
